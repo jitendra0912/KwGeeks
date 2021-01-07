@@ -17,6 +17,9 @@
 		476E17E825A1E369001E212A /* KwGeeksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E17E725A1E369001E212A /* KwGeeksUITests.swift */; };
 		476E17FA25A1E3A5001E212A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E17F925A1E3A5001E212A /* LoginScreen.swift */; };
 		476E180825A1F9AC001E212A /* CustomeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E180725A1F9AC001E212A /* CustomeTextField.swift */; };
+		47864DF525A7033C006CC56B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864DF425A7033C006CC56B /* Login.swift */; };
+		47864DFE25A709CE006CC56B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864DFD25A709CE006CC56B /* LoginViewModel.swift */; };
+		47864E0625A70A12006CC56B /*  Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864E0525A70A11006CC56B /*  Countries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		476E17E925A1E369001E212A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		476E17F925A1E3A5001E212A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		476E180725A1F9AC001E212A /* CustomeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTextField.swift; sourceTree = "<group>"; };
+		47864DF425A7033C006CC56B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		47864DFD25A709CE006CC56B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		47864E0525A70A11006CC56B /*  Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Countries.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		476E17C425A1E368001E212A /* KwGeeks */ = {
 			isa = PBXGroup;
 			children = (
+				47864DFC25A7099B006CC56B /* Model */,
 				476E180625A1F983001E212A /* Utility */,
 				476E17F825A1E375001E212A /* Controller */,
 				476E17C525A1E368001E212A /* AppDelegate.swift */,
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				476E17F925A1E3A5001E212A /* LoginScreen.swift */,
+				47864DF425A7033C006CC56B /* Login.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,6 +164,15 @@
 				476E180725A1F9AC001E212A /* CustomeTextField.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		47864DFC25A7099B006CC56B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47864DFD25A709CE006CC56B /* LoginViewModel.swift */,
+				47864E0525A70A11006CC56B /*  Countries.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,11 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47864DF525A7033C006CC56B /* Login.swift in Sources */,
 				476E17C625A1E368001E212A /* AppDelegate.swift in Sources */,
 				476E17C825A1E368001E212A /* SceneDelegate.swift in Sources */,
 				476E17FA25A1E3A5001E212A /* LoginScreen.swift in Sources */,
 				476E180825A1F9AC001E212A /* CustomeTextField.swift in Sources */,
 				476E17CA25A1E368001E212A /* ContentView.swift in Sources */,
+				47864DFE25A709CE006CC56B /* LoginViewModel.swift in Sources */,
+				47864E0625A70A12006CC56B /*  Countries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"KwGeeks/Preview Content\"";
+				DEVELOPMENT_TEAM = 9292Q3JYVD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = KwGeeks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,6 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"KwGeeks/Preview Content\"";
+				DEVELOPMENT_TEAM = 9292Q3JYVD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = KwGeeks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
