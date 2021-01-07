@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18660758723AA11C3F2D2069 /* Pods_KwGeeks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D15894AA8AD78F094FF338 /* Pods_KwGeeks.framework */; };
 		476E17C625A1E368001E212A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E17C525A1E368001E212A /* AppDelegate.swift */; };
 		476E17C825A1E368001E212A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E17C725A1E368001E212A /* SceneDelegate.swift */; };
 		476E17CA25A1E368001E212A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E17C925A1E368001E212A /* ContentView.swift */; };
@@ -20,6 +21,8 @@
 		47864DF525A7033C006CC56B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864DF425A7033C006CC56B /* Login.swift */; };
 		47864DFE25A709CE006CC56B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864DFD25A709CE006CC56B /* LoginViewModel.swift */; };
 		47864E0625A70A12006CC56B /*  Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864E0525A70A11006CC56B /*  Countries.swift */; };
+		47864E1E25A7294E006CC56B /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864E1D25A7294E006CC56B /* Verification.swift */; };
+		47864E2325A72D3E006CC56B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864E2225A72D3E006CC56B /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F1FEBB5FBE81838D571A5AA /* Pods-KwGeeks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KwGeeks.debug.xcconfig"; path = "Target Support Files/Pods-KwGeeks/Pods-KwGeeks.debug.xcconfig"; sourceTree = "<group>"; };
 		476E17C225A1E368001E212A /* KwGeeks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KwGeeks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		476E17C525A1E368001E212A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		476E17C725A1E368001E212A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,10 @@
 		47864DF425A7033C006CC56B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		47864DFD25A709CE006CC56B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		47864E0525A70A11006CC56B /*  Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Countries.swift"; sourceTree = "<group>"; };
+		47864E1D25A7294E006CC56B /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		47864E2225A72D3E006CC56B /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		4B02D4B3C3FAE95BD58FA550 /* Pods-KwGeeks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KwGeeks.release.xcconfig"; path = "Target Support Files/Pods-KwGeeks/Pods-KwGeeks.release.xcconfig"; sourceTree = "<group>"; };
+		90D15894AA8AD78F094FF338 /* Pods_KwGeeks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KwGeeks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18660758723AA11C3F2D2069 /* Pods_KwGeeks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E4E046083202292E5B00384 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F1FEBB5FBE81838D571A5AA /* Pods-KwGeeks.debug.xcconfig */,
+				4B02D4B3C3FAE95BD58FA550 /* Pods-KwGeeks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		476E17B925A1E368001E212A = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +111,8 @@
 				476E17DB25A1E369001E212A /* KwGeeksTests */,
 				476E17E625A1E369001E212A /* KwGeeksUITests */,
 				476E17C325A1E368001E212A /* Products */,
+				3E4E046083202292E5B00384 /* Pods */,
+				D8F548DCFAC09A989285275C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +174,8 @@
 			children = (
 				476E17F925A1E3A5001E212A /* LoginScreen.swift */,
 				47864DF425A7033C006CC56B /* Login.swift */,
+				47864E1D25A7294E006CC56B /* Verification.swift */,
+				47864E2225A72D3E006CC56B /* AlertView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +197,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D8F548DCFAC09A989285275C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90D15894AA8AD78F094FF338 /* Pods_KwGeeks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 476E17EC25A1E369001E212A /* Build configuration list for PBXNativeTarget "KwGeeks" */;
 			buildPhases = (
+				138DD94E4E19D63A69DCBB1D /* [CP] Check Pods Manifest.lock */,
 				476E17BE25A1E368001E212A /* Sources */,
 				476E17BF25A1E368001E212A /* Frameworks */,
 				476E17C025A1E368001E212A /* Resources */,
+				DFFE35F982B3FB8572B8DB82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +332,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		138DD94E4E19D63A69DCBB1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KwGeeks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFFE35F982B3FB8572B8DB82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KwGeeks/Pods-KwGeeks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KwGeeks/Pods-KwGeeks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KwGeeks/Pods-KwGeeks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		476E17BE25A1E368001E212A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -310,7 +384,9 @@
 				476E17C825A1E368001E212A /* SceneDelegate.swift in Sources */,
 				476E17FA25A1E3A5001E212A /* LoginScreen.swift in Sources */,
 				476E180825A1F9AC001E212A /* CustomeTextField.swift in Sources */,
+				47864E2325A72D3E006CC56B /* AlertView.swift in Sources */,
 				476E17CA25A1E368001E212A /* ContentView.swift in Sources */,
+				47864E1E25A7294E006CC56B /* Verification.swift in Sources */,
 				47864DFE25A709CE006CC56B /* LoginViewModel.swift in Sources */,
 				47864E0625A70A12006CC56B /*  Countries.swift in Sources */,
 			);
@@ -477,6 +553,7 @@
 		};
 		476E17ED25A1E369001E212A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1FEBB5FBE81838D571A5AA /* Pods-KwGeeks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -498,6 +575,7 @@
 		};
 		476E17EE25A1E369001E212A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B02D4B3C3FAE95BD58FA550 /* Pods-KwGeeks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

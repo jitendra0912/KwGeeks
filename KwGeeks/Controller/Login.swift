@@ -10,6 +10,7 @@ struct Login: View {
     @StateObject var loginData = LoginViewModel()
     @State var phoneNumber: String = ""
     @State var userPassword: String = ""
+    @State var selectedTag: String?
     private let placeHolder = "Your phone number"
 
     @State var isSmall = UIScreen.main.bounds.height < 750
@@ -61,17 +62,26 @@ struct Login: View {
                     
                 }
                 .padding()
+                NavigationLink(
+                               destination: Text("XX"),
+                               tag: "xx",
+                               selection: $selectedTag,
+                               label: { EmptyView() }
+                           )
                 
-                Button(action:{}, label: {
+                Button(action:{
+                    self.selectedTag = "xx"
+                }, label: {
                     
                     Text("Continue")
                         .foregroundColor(.white)
                         .padding(.vertical,18)
                         .padding(.horizontal,38)
-                        .background(Color("pink"))
+                        .background(Color("blue"))
                         .cornerRadius(15)
+                        .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: -5)
                 })
-                .disabled(loginData.phNo == "" ? true: false)
+              //  .disabled(loginData.phNo == "" ? true: false)
                 Spacer()
                 
             }
