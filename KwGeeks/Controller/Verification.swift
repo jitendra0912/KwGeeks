@@ -55,13 +55,13 @@ struct Verification: View {
                     Spacer(minLength: 0)
                     
                     HStack(spacing: 15){
-                        
-                        ForEach(0..<6,id: \.self){index in
-                            
-                            // displaying code....
-                            
-                            CodeView(code: getCodeAtIndex(index: index))
-                        }
+                        CodeView(code:"")
+//                        ForEach(0..<6,id: \.self){index in
+//
+//                            // displaying code....
+//
+//
+//                        }
                     }
                     .padding()
                     .padding(.horizontal,20)
@@ -142,16 +142,20 @@ struct CodeView: View {
         
         VStack(spacing: 10){
             
-            Text(code)
-                .foregroundColor(.black)
-                .fontWeight(.bold)
-                .font(.title2)
-            // default frame...
-                .frame(height: 45)
-            
-            Capsule()
-                .fill(Color.gray.opacity(0.5))
-                .frame(height: 4)
+//            Text(code)
+//                .foregroundColor(.black)
+//                .fontWeight(.bold)
+//                .font(.title2)
+//            // default frame...
+//                .frame(height: 45)
+//
+//            Capsule()
+//                .fill(Color.gray.opacity(0.5))
+//                .frame(height: 4)
+          OTPVerification { otp, completionHandler in
+                // check if the otp is correct here
+    
+            }
         }
     }
 }

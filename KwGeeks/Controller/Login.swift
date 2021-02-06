@@ -7,12 +7,13 @@
 
 import SwiftUI
 struct Login: View {
-    @StateObject var loginData = LoginViewModel()
+    @ObservedObject var loginData = LoginViewModel()
+   // @ObservedObject var input = UserInput()
     @State var phoneNumber: String = ""
     @State var userPassword: String = ""
     @State var selectedTag: String?
     private let placeHolder = "Your phone number"
-
+  
     @State var isSmall = UIScreen.main.bounds.height < 750
     var body: some View {
         
@@ -21,7 +22,7 @@ struct Login: View {
             VStack{
                 
                 VStack{
-                    
+                   
                     Text("Continue With Phone")
                         .font(.title2)
                         .fontWeight(.bold)
@@ -46,7 +47,8 @@ struct Login: View {
                         .font(.caption)
                         .foregroundColor(.gray)
                     HStack {
-                        Text("+ \(loginData.getCountryCode())  \(loginData.phNo)")
+                        
+                        Text("+ \(loginData.getCountryCode())")
                             .font(.title2)
                             .fontWeight(.bold)
                             .foregroundColor(.black)
@@ -62,26 +64,28 @@ struct Login: View {
                     
                 }
                 .padding()
-                NavigationLink(
-                               destination: Text("XX"),
-                               tag: "xx",
-                               selection: $selectedTag,
-                               label: { EmptyView() }
-                           )
+                NavigationLink(destination: Verification(loginData: loginData),isActive: $loginData.gotoVerify) {
+                    Text("")
+                    .hidden()
+                }
                 
-                Button(action:{
-                    self.selectedTag = "xx"
+                
+              
+                Button(action:{self.loginData.phNo = String(phoneNumber)
+                    self.loginData.sendCode()
                 }, label: {
                     
                     Text("Continue")
+              
                         .foregroundColor(.white)
                         .padding(.vertical,18)
                         .padding(.horizontal,38)
                         .background(Color("blue"))
                         .cornerRadius(15)
                         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: -5)
+                       
                 })
-              //  .disabled(loginData.phNo == "" ? true: false)
+            //  .disabled(loginData.phNo == "" ? true: false)
                 Spacer()
                 
             }
@@ -92,10 +96,10 @@ struct Login: View {
     
 }
 
-struct Login_Previews1: PreviewProvider {
-    static var previews: some View {
-        Login()
-    }
-}
+//struct Login_Previews1: PreviewProvider {
+//    static var previews: some View {
+//        Login(
+//    }
+//}
 
 
