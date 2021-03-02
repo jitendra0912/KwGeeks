@@ -25,6 +25,7 @@
 		47864E1E25A7294E006CC56B /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864E1D25A7294E006CC56B /* Verification.swift */; };
 		47864E2325A72D3E006CC56B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47864E2225A72D3E006CC56B /* AlertView.swift */; };
 		47864E3125A7383B006CC56B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47864E3025A7383B006CC56B /* GoogleService-Info.plist */; };
+		47F4A31B25EE2AA5008FA06E /* CustomeTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F4A31A25EE2AA5008FA06E /* CustomeTabbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		47864E1D25A7294E006CC56B /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
 		47864E2225A72D3E006CC56B /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		47864E3025A7383B006CC56B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		47F4A31A25EE2AA5008FA06E /* CustomeTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTabbar.swift; sourceTree = "<group>"; };
 		4B02D4B3C3FAE95BD58FA550 /* Pods-KwGeeks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KwGeeks.release.xcconfig"; path = "Target Support Files/Pods-KwGeeks/Pods-KwGeeks.release.xcconfig"; sourceTree = "<group>"; };
 		90D15894AA8AD78F094FF338 /* Pods_KwGeeks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KwGeeks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				476E180725A1F9AC001E212A /* CustomeTextField.swift */,
+				47F4A31A25EE2AA5008FA06E /* CustomeTabbar.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				476E17C825A1E368001E212A /* SceneDelegate.swift in Sources */,
 				476E17FA25A1E3A5001E212A /* LoginScreen.swift in Sources */,
 				476E180825A1F9AC001E212A /* CustomeTextField.swift in Sources */,
+				47F4A31B25EE2AA5008FA06E /* CustomeTabbar.swift in Sources */,
 				47864E2325A72D3E006CC56B /* AlertView.swift in Sources */,
 				476E17CA25A1E368001E212A /* ContentView.swift in Sources */,
 				47864E1E25A7294E006CC56B /* Verification.swift in Sources */,
